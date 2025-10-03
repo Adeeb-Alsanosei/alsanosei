@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import usePackageStore from '../../store/packageStore';
 
 // --- Package Data & Utilities ---
-const RATE = 2750;
+const RATE = 3500;
 const SHIPPING_FEE_PERCENT = 0.10;
 const COMMISSION_FEE_PERCENT = 0.05;
 const packageData = [

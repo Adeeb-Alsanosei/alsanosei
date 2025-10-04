@@ -18,7 +18,7 @@ export default function App() {
         className="fixed inset-0 w-full h-full object-cover z-0"
         style={{ pointerEvents: 'none' }}
       >
-        <source src="/assets/videos/background.mp4" type="video/mp4" />
+        <source src={`${import.meta.env.BASE_URL}assets/videos/background.mp4`} type="video/mp4" />
       </video>
       {/* Overlay for content to ensure readability */}
       <div className="relative z-10 min-h-screen w-full flex flex-col items-center justify-start">
@@ -59,7 +59,7 @@ export default function App() {
               className="flex items-center justify-center rounded-full bg-green-500 hover:bg-green-600 shadow-lg w-16 h-16 transition-all duration-150"
               style={{ minWidth: '64px', minHeight: '64px' }}
             >
-              <img src="/assets/icons/whatsapp.svg" alt="واتساب" width="45" height="45" style={{display: 'block'}} />
+              <img src={`${import.meta.env.BASE_URL}assets/icons/whatsapp.svg`} alt="واتساب" width="45" height="45" style={{display: 'block'}} />
             </a>
             <a
               href="mailto:adeeb.adam2000@gmail.com"
@@ -69,7 +69,7 @@ export default function App() {
               className="flex items-center justify-center rounded-full bg-blue-500 hover:bg-blue-600 shadow-lg w-16 h-16 transition-all duration-150"
               style={{ minWidth: '64px', minHeight: '64px' }}
             >
-              <img src="/assets/icons/email.svg" alt="البريد الإلكتروني" width="45" height="45" style={{display: 'block'}} />
+              <img src={`${import.meta.env.BASE_URL}assets/icons/email.svg`} alt="البريد الإلكتروني" width="45" height="45" style={{display: 'block'}} />
             </a>
           </div>
         </footer>
